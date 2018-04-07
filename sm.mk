@@ -18,9 +18,9 @@
 $(call inherit-product, device/xiaomi/ido/full_ido.mk)
 
 # Inherit some common AICP stuff.
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+$(call inherit-product, vendor/sm/config/common_full_phone.mk)
 
-PRODUCT_NAME := aicp_ido
+PRODUCT_NAME := sm_ido
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
@@ -30,10 +30,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="ido-user 5.1.1 LMY47V V9.2.1.0.LAIMIEK release-keys"
 
 BUILD_FINGERPRINT="Xiaomi/ido/ido:5.1.1/LMY47V/V9.2.1.0.LAIMIEK:user/release-keys"
-
-# Boot animation
--include vendor/aicp/configs/bootanimation.mk
-
-# AICP Device Maintainers
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Albert I (krasCGQ)"
