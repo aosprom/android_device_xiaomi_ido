@@ -149,7 +149,7 @@ PRODUCT_PACKAGES += \
     libgenlock
 
 # Doze mode
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     XiaomiDoze
 
 # DRM
